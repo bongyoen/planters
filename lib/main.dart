@@ -18,14 +18,14 @@ class MyApp extends StatelessWidget {
 
         // 앱의 주요부분 배경 색 (앱바, 탭바 등)
         primaryColor: Colors.greenAccent,
-
-        // 위젯의 전경색
-        accentColor: Colors.redAccent,
+        colorScheme:
+            ColorScheme.fromSwatch().copyWith(secondary: Colors.redAccent),
 
         // 앱에 기본으로 사용될 폰트
         // fontFamily: 'IBM-Sans'
       ),
       home: Scaffold(
+        appBar: AppBar(),
         body: Center(
           child: Calendar2(key: UniqueKey()),
           // child: Text('hello 채윤!'),
